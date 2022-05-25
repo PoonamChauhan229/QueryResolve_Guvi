@@ -1,0 +1,62 @@
+
+// HTTP Request
+// 1 - Server Connected
+// 2 - Request Received
+// 3 - Request Processing (Inprogress)
+// 4 - Request Finished
+
+function handleRequest() {
+  if (this.readyState === 4) {
+    if (this.status === 200) {
+      const data = JSON.parse(this.responseText);
+      console.log("Request Success");
+      console.table(data);
+    } else {
+      console.error("Error While Requesting Server");
+    }
+  }
+}
+
+// GET - https://www.mecallapi.com/api/users
+// const http = new XMLHttpRequest();
+// h
+divya kilari6:08 PM
+// POST - https://www.mecallapi.com/api/users/create
+// const sampleUser = {
+//   fname: "Tamil",
+//   lname: "Sekar",	
+//   username: "tamil@guvi.in",
+//   email: "tamil@guvi.in",
+//   avatar: "https://www.mecallapi.com/users/cat.png",
+// };
+// const http = new XMLHttpRequest();
+// http.onreadystatechange = handleRequest;
+// http.open("POST", "https://www.mecallapi.com/api/users/create");
+// http.setRequestHeader("Content-Type", "application/json");
+// http.send(JSON.stringify(sampleUser));
+
+// POST - https://www.mecallapi.com/api/users/create
+// const sampleUser = {
+//   fname: "Tamil",
+//   lname: "Sekar",	
+//   username: "tamil@guvi.in",
+//   email: "tamil@guvi.in",
+//   avatar: "https://www.mecallapi.com/users/cat.png",
+// };
+// const http = new XMLHttpRequest();
+// http.onreadystatechange = handleRequest;
+// http.open("POST", "https://www.mecallapi.com/api/users/create");
+// http.setRequestHeader("Content-Type", "application/json");
+// http.send(JSON.stringify(sampleUser));
+
+function handleRequest() {
+  if (this.readyState === 4) {
+    if (this.status === 200) {
+      const data = JSON.parse(this.responseText);
+      console.log("Request Success");
+      console.table(data);
+    } else {
+      console.error("Error While Requesting Server");
+    }
+  }
+}

@@ -1,0 +1,39 @@
+return median of two sorted arrays of 
+the same size 
+
+Math.floor
+5.9
+>>5
+MC>>6
+
+5.6
+>>5
+MC>>6
+
+odd
+2,3,4=>median-3(middle num)
+middle most element
+
+3 elements
+3/2=>1.5~1
+
+1 is what index no
+>>3 
+
+odd=>n/2
+
+even
+2,3,4,5=>median(3+4/2)=3.5~3
+middle most element
+
+4 elements
+4/2=>2
+2 is what index no
+>>4
+
+even=>n/2 & (n/2)-1
+>>(4+3)/2
+
+
+https://www.youtube.com/watch?v=afwPSXmRsGs
+
