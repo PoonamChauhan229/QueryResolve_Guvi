@@ -2,7 +2,7 @@
 
 async function foo(){
     
-    
+    console.log("hi")
     var res=document.getElementById("text").value;
     console.log(res);
     let result=await fetch(`https://api.nationalize.io?name=${res}`);

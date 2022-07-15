@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="task"></div>
+    <script>
+    var abc = setInterval(time, 1000)
+    var count = 10;
+    function time(){
+        count--;
+        console.log(count);
+        var display = document.getElementById('task')
+        display.innerText = count
+    
+    if(count<=0){
+        clearInterval(abc);
+    }
+    if (count===0){
+        console.log("Happy Birthday")
+        display.innerText = "Happy Birthday"
+        
+    }
+}
+    </script>
+</body>
+
+</html>

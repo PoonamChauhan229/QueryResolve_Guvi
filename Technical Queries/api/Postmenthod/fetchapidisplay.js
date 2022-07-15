@@ -9,7 +9,7 @@ async function pokemonApi(){
    // n1.innerHTML=`<h3>${response.results[0].name}</h3>`
 
    //for loop
-   for(i=0;i<res1.length;i++){
+   for(i=0;i<10;i++){
 
     n1.innerHTML+=`          
     <div class="card-body border">
@@ -39,3 +39,23 @@ pokemonApi()
 //   <p class="card-text">${response[i].name}</p> 
 //   <p class="card-text">${response[i].brewery_type}</p>
 //   <p class="card-text">${response[i].city}</p> */}
+
+const data={
+    Active: 1,
+City: "",
+CityCode: "",
+Confirmed: 1,
+Country: "India",
+CountryCode: "",
+Date: "2020-01-30T00:00:00Z",
+Deaths: "0",
+Lat: "0",
+Lon: "0",
+Province: "",
+Recovered: 0,
+}
+
+async function postApi(){
+    
+
+}

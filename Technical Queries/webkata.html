@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+  </head>
+  <body oninput="displaySelectedOption()">
+      <input type="radio" name="option" id="option1" value="opt1">
+      <label for="option1">Option 1</label>
+      <input type="radio" name="option" id="option2" value="opt2">
+      <label for="option2">Option 2</label>
+      <input type="radio" name="option" id="option3" value="opt3">
+      <label for="option3">Option 3</label>
+      <input type="radio" name="option" id="option4" value="opt4">
+      <label for="option4">Option 4</label>
+      <input type="radio" name="option" id="option5" value="opt5">
+      <label for="option5">Option 5</label>
+      <input type="radio" name="option" id="option6" value="opt6">
+      <label for="option6">Option 6</label>
+      <p>The Selected option is </p>
+      <p  style="background-color:yellow" id="selectedOption"></p>
+
+
+      <script>
+  function displaySelectedOption(){
+	var ele = document.getElementsByName('option');
+    console.log(ele)
+    for(i = 0; i < ele.length; i++) {
+        if(ele[i].checked)
+        document.getElementById("selectedOption").innerHTML = ele[i].value;
+    }
+}
+
+displaySelectedOption();
+      </script>
+  </body>
+</html>

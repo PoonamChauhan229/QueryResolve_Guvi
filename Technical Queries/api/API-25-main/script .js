@@ -50,7 +50,6 @@ for(let i=0; i<data1.forecast.length; i++){
 }
 console.log(cardRow)
 
-
 })
 .catch((error)=>{
   console.log(error);
