@@ -21,6 +21,7 @@ async function pokemonApi(){
                             <img src=${res1[i].coatOfArms.png} class="card-img-top" alt="...">
                             <div id="deaths">Flags:${res1[i].flags.png}</div>
                             <img src=${res1[i].flags.png} class="card-img-top" alt="...">
+                            <button>Click for weather data</button>
                             </div>                             
             </div>
     

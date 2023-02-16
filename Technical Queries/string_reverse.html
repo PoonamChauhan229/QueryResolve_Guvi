@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var userInput = ["guvi coding platform"];
+      var str = userInput[0].split(" ");
+      var inds = [];
+      var result = [];
+      var rev=""
+
+      // console.log(str);
+      for (k = 0; k < str.length; k++) {
+        inds.push([str[k].split("")]);
+      }
+      console.log(inds);
+      console.log(inds.length);
+
+      for (l=0;l<inds.length; l++) {
+       
+        // console.log(inds[l][0].length)
+        for(m=0;m<inds[l][0].length;m++){
+          
+          if (m== 0) {
+            result.push(inds[l][0][m]);
+            // console.log(inds[l][0].length-1)
+            // console.log(m)
+           }   
+
+           if(m<1){
+            for(i=1;i<=inds[l][0].length-2;i++){
+            // console.log(inds[l][0][i])
+          // result.push(inds[l][0][i]).rev()
+          rev += inds[l][0][i].split("");
+            // console.log(i)
+            
+              
+           }
+           
+           }
+           
+      
+           
+           
+           if (m==inds[l][0].length-1) {
+            // console.log(inds[l][0].length-2)
+            // console.log(inds[l][0][m])
+           
+            }
+
+        }
+        
+      
+     }
+    console.log(rev)
+    var temp = rev.split("").reverse().join("");
+    console.log(temp)
+      //     result.push(temp);
+     console.log(result)
+    
+
+      // var rev = "";
+
+      // var count = 0;
+      // function reversearr(str) {
+      //   for (let i = 0; i < str[count].length; i++) {
+      //     if (i == 0) {
+      //       result.push(str[count][i]);
+      //     }
+      //     // console.log(i)
+
+      //     for (i = 1; i <= str[count].length - 2; i++) {
+      //       rev += str[count][i].split("");
+      //     }
+
+      //     var temp = rev.split("").reverse().join("");
+      //     result.push(temp);
+      //     if (i == str[count].length - 1) {
+      //       result.push(str[count][i]);
+      //     }
+      //   }
+      //   // console.log(result);
+      // }
+      // // console.log(count);
+      // reversearr(str);
+    </script>
+  </body>
+</html>

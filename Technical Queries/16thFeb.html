@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <i class="fa-solid fa-house"></i>
+    <i class="fa-solid fa-user"></i>
+    <!-- bootstrap
+        fontawesome
+    -->
+    <span id="abc"></span>
+
+    <form onsubmit="random(event)">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+      <h1>New</h1>
+      <div>
+        <img src="./eventimg.png" alt="" height="100px" width="150px">
+      </div>
+
+      <script>
+        var abc=document.getElementById('abc')
+        var fname=document.getElementById('fname')
+        function random(event){
+            event.preventDefault();
+            console.log(event)
+            abc.innerText=fname.value           
+
+        }
+      </script>
+</body>
+</html>
